@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --cyan:hsl(179, 62%, 43%);
+    --cyanlight:hsl(179, 62%, 47%);
+    --brightyellow:hsl(71, 73%, 54%);
+    --lightgrey:hsl(204, 43%, 93%);
+    --grayblue:hsl(218, 22%, 67%);
+    --txt:'Karla', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background:#E6EFF6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--txt);
+    font-size: 16px;
+}
+
+main{
+    max-width: 635px;
+    height: 475px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.1);
+}
+
+.top{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.left{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color:var(--cyan);
+    border-radius: 0 0 0 0.5rem;
+    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.1);
+}
+
+.right{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color:var(--cyanlight);
+    border-radius: 0 0 0.5rem 0;
+    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.1);
+}
+
+.fontcolorwhite{
+    color: white;
+}
+
+h2{
+    color: var(--cyan);
+}
+
+.fontcolorbrightyellow{
+    color: var(--brightyellow);
+}
+
+.top p{
+    color: var(--grayblue);
+    line-height: 1.425rem;
+}
+
+.dollar{
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #FCFFFF;
+}
+
+a{
+    text-decoration: none;
+    background: var(--brightyellow);
+    padding: 1rem 5.6rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.right p{
+    font-size: 0.9rem;
+    line-height: 0.425rem;
+    color: #9DF1F3;
+
+}
+
+.fullaccess{
+    color: #CDFFFF;
+    margin-top:-0.5rem;
+    margin-bottom:2.8rem ;
+}
+
+.content-padding{
+    padding:1.5rem 2.5rem 0 2.5rem;
+}
+
+.month{
+    color: #7BE3E3;
+    position: relative;
+    bottom: 0.25rem;
+    left: 0.5rem;
+}
+
+@media (max-width: 634px) {
+    main{
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    .top{
+        grid-row: 1 / 2;
+    }
+    
+    .left{
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .right{
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+}
