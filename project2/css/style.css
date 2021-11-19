@@ -1,13 +1,13 @@
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 * {
@@ -25,11 +25,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: "Josefin Sans", sans-serif;
   height: 100vh;
 }
@@ -44,7 +44,7 @@ main {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr auto;
-      grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
   grid-row: 1fr 1fr;
 }
 
@@ -60,10 +60,11 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 4rem 14rem 0 10rem;
-  background-image: url(/images/bg-pattern-desktop.svg), linear-gradient(135deg, white, #fff5f5);
+  background-image: url(/images/bg-pattern-desktop.svg),
+    linear-gradient(135deg, white, #fff5f5);
 }
 
 .input-area {
@@ -133,7 +134,8 @@ input {
   border-radius: 2rem;
 }
 
-input:focus-visible, input:focus {
+input:focus-visible,
+input:focus {
   outline: none;
 }
 
@@ -178,7 +180,7 @@ a {
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
   -ms-grid-column-align: end;
-      justify-self: end;
+  justify-self: end;
 }
 
 @media (max-width: 621px) {
@@ -197,8 +199,8 @@ a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     text-align: center;
   }
   .logo-container {
