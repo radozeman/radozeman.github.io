@@ -112,7 +112,9 @@ input {
     outline: none;
   }
 }
-
+::placeholder {
+  color: $primary1;
+}
 .placeholder-position {
   padding-left: 1.5rem;
 }

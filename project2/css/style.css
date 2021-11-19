@@ -137,6 +137,22 @@ input:focus-visible, input:focus {
   outline: none;
 }
 
+::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+::placeholder {
+  color: #ce9797;
+}
+
 .placeholder-position {
   padding-left: 1.5rem;
 }
