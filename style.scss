@@ -9,10 +9,6 @@ html {
   box-sizing: inherit;
 }
 
-// * {
-//   border: 1px solid black;
-// }
-
 body {
   display: flex;
   flex-direction: column;
@@ -35,13 +31,13 @@ img {
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
 }
 
 article {
   margin: 2rem 1.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
   background-color: transparentize(white, 0.7);
   border-radius: 1rem;
   box-shadow: 0 0 30px 5px black;
@@ -80,7 +76,7 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   body {
     height: 80vh;
     background: linear-gradient(
@@ -90,14 +86,14 @@ a {
     );
   }
 }
-@media (max-width: 499px) {
+@media (max-width: 31.1875rem) {
   body {
     padding-top: 20rem;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25rem) {
   body {
-    padding-top: 60rem;
+    padding-top: 100rem;
   }
 }
