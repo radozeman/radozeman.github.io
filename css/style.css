@@ -94,7 +94,7 @@ a:hover {
 
 @media (max-width: 768px) {
   body {
-    height: 100vh;
+    height: 80vh;
     background: -webkit-gradient(linear, left top, right top, from(#d11f1f), to(#7d16fa));
     background: linear-gradient(90deg, #d11f1f 0%, #7d16fa 100%);
   }
@@ -102,13 +102,13 @@ a:hover {
 
 @media (max-width: 499px) {
   body {
-    margin-top: 25rem;
+    padding-top: 20rem;
   }
 }
 
 @media (max-width: 400px) {
   body {
-    margin-top: 25rem;
+    padding-top: 60rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

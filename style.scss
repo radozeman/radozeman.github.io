@@ -82,7 +82,7 @@ a {
 
 @media (max-width: 768px) {
   body {
-    height: 100vh;
+    height: 80vh;
     background: linear-gradient(
       90deg,
       rgba(209, 31, 31, 1) 0%,
@@ -92,12 +92,12 @@ a {
 }
 @media (max-width: 499px) {
   body {
-    margin-top: 25rem;
+    padding-top: 20rem;
   }
 }
 
 @media (max-width: 400px) {
   body {
-    margin-top: 25rem;
+    padding-top: 60rem;
   }
 }
