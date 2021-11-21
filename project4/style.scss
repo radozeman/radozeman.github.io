@@ -1,0 +1,147 @@
+$color1: hsl(217, 19%, 35%);
+$color2: hsl(214, 17%, 51%);
+$color3: hsl(212, 23%, 69%);
+$color4: hsl(210, 46%, 95%);
+$text: "Manrope", sans-serif;
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: $text;
+  background-color: $color4;
+}
+
+main {
+  display: grid;
+  grid-template-columns: max(22.5rem) minmax(21.875rem, 1fr);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.border {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.avatar-container {
+  width: 100%;
+  grid-column: 1 / 2;
+  align-self: center;
+}
+
+.avatar-border {
+  border-radius: 2rem;
+}
+
+.name {
+  display: inline-block;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin-left: 1rem;
+  position: relative;
+  bottom: 0.6rem;
+  font-weight: 900;
+  color: $color1;
+}
+
+.date {
+  display: inline-block;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin-left: 1rem;
+  position: relative;
+  top: 0.8rem;
+}
+
+.icon-container {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  width: 100%;
+  align-self: center;
+}
+
+.icon-background {
+  background-color: $color4;
+  padding: 0.625rem;
+  border-radius: 2rem;
+}
+
+.text-area {
+  padding: 1rem 2.5rem;
+  background-color: white;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.profile-area {
+  display: grid;
+  grid-template-columns: minmax(1.25rem, 2.5rem) minmax(5rem, 22.5rem) minmax(
+      1rem,
+      2.1875rem
+    );
+}
+
+h1 {
+  width: 28ch;
+  font-size: 1.45rem;
+  color: $color1;
+}
+p {
+  width: 53ch;
+  font-size: 0.8rem;
+  color: $color2;
+}
+
+.line-height {
+  line-height: 1.5;
+}
+@media (max-width: 55rem) {
+  main {
+    grid-template-columns: minmax(18.75rem, 26.875rem);
+  }
+  .text-area {
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 0 0rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .border {
+    border-radius: 1rem 1rem 0 0;
+  }
+  h1 {
+    width: auto;
+    font-size: 1rem;
+    text-align: left;
+  }
+  p {
+    width: auto;
+    text-align: left;
+  }
+}
+
+@media (max-width: 26.875rem) {
+  body {
+    padding: 0 1rem;
+  }
+  .profile-area {
+    padding-top: 1rem;
+  }
+  h1 {
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+  }
+}
